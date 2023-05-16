@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #201230;
-  background: radial-gradient(#512e7a, #201230);
+  background: radial-gradient(#46236e, #080b49);
   background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+  /* font-size */
+  color: #eee;
 }
 .container {
   position: absolute;
@@ -232,24 +237,19 @@ body {
 
 
 /* TEXT */
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #000;
-  color: #eee;
-}
-.container {
+
+/* .container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 .container p {
   font-size: 3rem;
   padding: 0.5rem;
@@ -281,11 +281,6 @@ body {
 }
 
 /* GREETING TEXT */
-body {
-  font-size: 62.5%;
-  font-style: Arial;
-}
-
 .animation-container {
   width: 1000rem;
   height: 30rem;
@@ -298,56 +293,21 @@ body {
     opacity: 0;
   }
 
-  75% {
+  100% {
     position: absolute;
-    top: 25%;
+    top: 30rem;
     opacity: 1;
   }
 
-  100% {
-    opacity: 0;
-  }
 }
 
 .greeting-text {
   font-size: 4.4rem;
   position: absolute;
-  left: 2.5rem;
-  top: 5rem;
-  opacity: 0;
+  left: 30rem;
+  top: 30rem;
+  opacity: 1;
   animation-name: topFadeOut;
   animation-duration: 2s;
   color: white;
-}
-
-/* CUSTOM CURSOR */
-body {
-  background: #17181a;
-/*   cursor: none; */
-  overflow-x: hidden;
-}
-
-#cursor {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: white;
-  border-radius: 50%;
-  mix-blend-mode: difference;
-  pointer-events: none;
-  transition: transform .15s ease-in-out;
-}
-
-section {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Rettangolo {
-  width: 300px;
-  height: 50px;
-  background: white;
-  border-radius: 2px;
 }
