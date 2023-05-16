@@ -21,9 +21,13 @@ body {
   /* font-size */
   color: #eee;
 }
+
+
 .container {
-  top: 50%;
-  position: sticky;
+  /* top: 50%; */
+  padding-top: 50%;
+  padding-right: 70%;
+  /* position: sticky; */
   width: 200%;
   /* max-width: 70%; */
 }
@@ -241,13 +245,18 @@ body {
 
 
 /* TEXT */
-/* .container {
-  height: 100vh;
+.cursor-container {
+  /* height: 100vh; */
   display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-.container p {
+  padding-left: 9%;
+  padding-top: 22%;
+  /* top: 21rem; */
+  position: sticky;
+  /* align-items: center; */
+  animation-name: skillsFadeIn;
+  animation-duration: 10s;
+}
+.cursor-container p {
   font-size: 3rem;
   padding: 0.5rem;
   font-weight: bold;
@@ -255,26 +264,26 @@ body {
   text-align: center;
   overflow: hidden;
 }
-.container p span.typed-text {
+.cursor-container p span.typed-text {
   font-weight: normal;
-  color: #dd7732;
+  color: #168a35;
 }
-.container p span.cursor {
+.cursor-container p span.cursor {
   display: inline-block;
-  background-color: #ccc;
+  background-color: #168a35;
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
 }
-.container p span.cursor.typing {
+.cursor-container p span.cursor.typing {
   animation: none;
 }
 @keyframes blink {
-  0%  { background-color: #ccc; }
-  49% { background-color: #ccc; }
+  0%  { background-color: #168a35; }
+  49% { background-color: #168a35; }
   50% { background-color: transparent; }
   99% { background-color: transparent; }
-  100%  { background-color: #ccc; }
+  100%  { background-color: #168a35; }
 }
 
 
@@ -289,7 +298,7 @@ body {
 @keyframes topFadeIn {
   0% {
     /* position: sticky; */
-    top: 5rem;
+    top: 12rem;
     opacity: 0;
   }
 }
@@ -298,7 +307,7 @@ body {
   position: sticky;
   padding-left: 10%;
   left: 30rem;
-  top: 15rem;
+  top: 22rem;
   opacity: 1;
   animation-name: topFadeIn;
   animation-duration: 2s;
@@ -309,12 +318,12 @@ body {
 @keyframes descriptionFadeIn {
   0% {
     /* position: sticky; */
-    top: 18rem;
+    top: 25rem;
     opacity: 0;
   }
   50% {
     /* position: sticky; */
-    top: 18rem;
+    top: 25rem;
     opacity: 0;
   }
 }
@@ -323,7 +332,7 @@ body {
   position: sticky;
   padding-left: 10%;
   left: 30rem;
-  top: 21rem;
+  top: 28rem;
   opacity: 1;
   animation-name: descriptionFadeIn;
   animation-duration: 4.5s;
@@ -374,7 +383,10 @@ a:hover {
 
 nav {
   padding-top: 10%;
-  padding-left: 80%;
+  padding-left: 10%;
+  animation-name: skillsFadeIn;
+  animation-duration: 10s;
+  /* what blocks the link at 80?? */
 }
 
 nav a {
